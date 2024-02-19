@@ -16,5 +16,7 @@
     "sulu.news.quote": "Quote",
     "sulu.news.editor": "Editor",
     "sulu.news.title": "Title",
-    "sulu_news.news_select": "Select news"
+    "sulu_news.news_select": "Select news",
+    "sulu.news.video": "Video",
+    "sulu.news.gallery": "Gallery"
 }
