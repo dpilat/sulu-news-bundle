@@ -86,8 +86,6 @@
                                         </param>
                                     </params>
                                 </property>
-
-
                             </properties>
                         </type>
                         <type name="editor">
@@ -119,7 +117,6 @@
                             <meta>
                                 <title>sulu.news.quote</title>
                             </meta>
-
                             <properties>
                                 <property name="quote" type="text_area" mandatory="true">
                                     <meta>
@@ -139,11 +136,39 @@
                             <meta>
                                 <title>sulu.news.video</title>
                             </meta>
-
                             <properties>
-                                <property name="video" type="text_line" mandatory="true">
+                                <property name="thumbnail" type="single_media_selection">
                                     <meta>
-                                        <title lang="en">YT Link</title>
+                                        <title>sulu.news.video.thumbnail</title>
+                                    </meta>
+                                    <params>
+                                        <param name="types" value="image"/>
+                                        <param name="image_size" value="800x400"/>
+                                    </params>
+                                </property>
+                                <property name="service" type="single_select">
+                                    <meta>
+                                        <title lang="en">sulu.news.video.type</title>
+                                    </meta>
+                                    <params>
+                                        <param name="values" type="collection">
+                                            <param name="youtube">
+                                                <meta>
+                                                    <title>Youtube</title>
+                                                </meta>
+                                            </param>
+                                            <param name="vimeo">
+                                                <meta>
+                                                    <title>Vimeo</title>
+                                                </meta>
+                                            </param>
+                                        </param>
+                                        <param name="default_value" value="youtube"/>
+                                    </params>
+                                </property>
+                                <property name="link" type="text_line" mandatory="true">
+                                    <meta>
+                                        <title lang="en">sulu.news.video.link</title>
                                     </meta>
                                 </property>
                             </properties>
@@ -152,7 +177,6 @@
                             <meta>
                                 <title>sulu.news.gallery</title>
                             </meta>
-
                             <properties>
                                 <property name="images" type="media_selection">
                                     <meta>

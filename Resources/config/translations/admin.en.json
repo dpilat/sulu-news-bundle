@@ -18,5 +18,8 @@
     "sulu.news.title": "Title",
     "sulu_news.news_select": "Select news",
     "sulu.news.video": "Video",
-    "sulu.news.gallery": "Gallery"
+    "sulu.news.gallery": "Gallery",
+    "sulu.news.video.thumbnail": "Thumbnail",
+    "sulu.news.video.link": "Link",
+    "sulu.news.video.type": "Type"
 }
