@@ -197,6 +197,19 @@
             </properties>
         </section>
 
+        <section name="categories">
+            <meta>
+                <title>Category</title>
+            </meta>
+            <properties>
+              <property name="categories" type="category_selection" mandatory="true">
+                  <meta>
+                      <title lang="en">Category Selection</title>
+                  </meta>
+              </property>
+            </properties>
+        </section>
+
         <section name="tags">
             <meta>
                 <title>Tags</title>
@@ -209,5 +222,7 @@
                 </property>
             </properties>
         </section>
+        
+        
     </properties>
 </form>
