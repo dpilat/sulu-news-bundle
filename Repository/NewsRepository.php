@@ -32,7 +32,7 @@ class NewsRepository extends EntityRepository implements DataProviderRepositoryI
         $this->getEntityManager()->flush();
     }
 
-    public function getPublishedNews(): array
+    public function getPublishedNews($page, $pageSize, $limit): array
     {
         $qb = $this->getEntityManager()->createQueryBuilder();
         $qb->select('n')
@@ -41,6 +41,19 @@ class NewsRepository extends EntityRepository implements DataProviderRepositoryI
             ->andWhere('n.publishedAt <= :created')
             ->setParameter('created', \date('Y-m-d H:i:s'))
             ->orderBy('n.publishedAt', 'DESC');
+
+        if (null !== $page && $pageSize > 0) {
+            $pageOffset = ($page - 1) * $pageSize;
+            $restLimit = $limit - $pageOffset;
+            $maxResults = (null !== $limit && $pageSize > $restLimit ? $restLimit : ($pageSize + 1));
+            if ($maxResults <= 0) {
+                return [];
+            }
+            $qb->setMaxResults($maxResults);
+            $qb->setFirstResult($pageOffset);
+        } elseif (null !== $limit) {
+            $qb->setMaxResults($limit);
+        }
 
         $news = $qb->getQuery()->getResult();
 
@@ -78,6 +91,6 @@ class NewsRepository extends EntityRepository implements DataProviderRepositoryI
 
     public function findByFilters($filters, $page, $pageSize, $limit, $locale, $options = [])
     {
-        return $this->getPublishedNews();
+        return $this->getPublishedNews($page, $pageSize, $limit);
     }
 }
