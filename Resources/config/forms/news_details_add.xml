@@ -220,6 +220,11 @@
                                         </param>
                                     </params>
                                 </property>
+                                <property name="viewPath" type="text_line" colspan="12">
+                                    <meta>
+                                        <title>sulu.news.viewPath</title>
+                                    </meta>
+                                </property>
                             </properties>
                         </type>
                     </types>
