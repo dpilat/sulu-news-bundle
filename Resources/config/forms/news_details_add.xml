@@ -192,6 +192,36 @@
                                 </property>
                             </properties>
                         </type>
+                        <type name="html">
+                            <meta>
+                                <title>sulu.news.html</title>
+                            </meta>
+                            <properties>
+                                <property name="html" type="text_area">
+                                    <meta>
+                                        <title lang="en">HTML</title>
+                                    </meta>
+                                </property>
+                            </properties>
+                        </type>
+                        <type name="page">
+                            <meta>
+                                <title>sulu.news.html</title>
+                            </meta>
+                            <properties>
+                                <property name="page" type="page_selection">
+                                    <meta>
+                                        <title lang="en">Page</title>
+                                    </meta>
+                                    <params>
+                                        <param name="properties" type="collection">
+                                            <param name="title" value="title"/>
+                                            <param name="article" value="article"/>
+                                        </param>
+                                    </params>
+                                </property>
+                            </properties>
+                        </type>
                     </types>
                 </block>
             </properties>
