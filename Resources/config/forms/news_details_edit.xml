@@ -207,7 +207,7 @@
                         </type>
                         <type name="page">
                             <meta>
-                                <title>sulu.news.html</title>
+                                <title>sulu.news.page</title>
                             </meta>
                             <properties>
                                 <property name="page" type="page_selection">
