@@ -83,6 +83,16 @@
                                                     <title>H3</title>
                                                 </meta>
                                             </param>
+                                            <param name="h4">
+                                                <meta>
+                                                    <title>H4</title>
+                                                </meta>
+                                            </param>
+                                            <param name="h5">
+                                                <meta>
+                                                    <title>H5</title>
+                                                </meta>
+                                            </param>
                                         </param>
                                     </params>
                                 </property>
