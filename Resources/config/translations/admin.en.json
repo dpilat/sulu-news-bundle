@@ -21,5 +21,9 @@
     "sulu.news.gallery": "Gallery",
     "sulu.news.video.thumbnail": "Thumbnail",
     "sulu.news.video.link": "Link",
-    "sulu.news.video.type": "Type"
+    "sulu.news.video.type": "Type",
+    "sulu.news.html": "HTML",
+    "sulu.news.page": "Page",
+    "sulu.news.media": "Media list"
+
 }
