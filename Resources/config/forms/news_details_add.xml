@@ -262,9 +262,9 @@
                                         <param name="defaultDisplayOption" value="left"/>
                                     </params>
                                 </property>
-                                <property name="showTittle" type="checkbox">
+                                <property name="showTitle" type="checkbox">
                                     <meta>
-                                        <title lang="en">Show Tittle</title>
+                                        <title lang="en">Show Title</title>
                                     </meta>
                                     <params>
                                         <param name="type" value="toggler"/>
