@@ -177,6 +177,11 @@
                                                     <title>Daily Motion</title>
                                                 </meta>
                                             </param>
+                                            <param name="fb">
+                                                <meta>
+                                                    <title>Facebook</title>
+                                                </meta>
+                                            </param>
                                         </param>
                                         <param name="default_value" value="youtube"/>
                                     </params>
